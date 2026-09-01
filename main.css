@@ -5,13 +5,31 @@
 }
 
 body {
-    background: linear-gradient(-45deg, #9c4f4f, #c92929, #544658, #469546);
+    background: linear-gradient(-45deg, #c4c24a, #c92929, #544658, #469546);
 	background-size: 400% 400%;
-	animation: gradient 30s ease infinite;
+	animation: gradient 20s ease infinite;
     height: 100%;
 
     margin-left: 5%;
     margin-right: 5%;
+}
+
+h1 {
+    font-size: 4.5vw;
+}
+
+a {
+    transition: 100ms;
+    background-color: #469546;
+    border: white solid 1px;
+    border-radius: 20px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 100ms;
+    background-color: #2a582a;
 }
 
 @keyframes gradient {
@@ -27,13 +45,66 @@ body {
 }
 
 .firstDiv {
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(15, 15, 15);
 
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 2%;
 
+    
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     box-shadow: 10px 10px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.vinyetaProyectos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(27, 27, 27);
+    border-radius: 25px;
+    padding: 2% 5% 2% 5%;
+}
+
+.vinyetaProyectos p {
+    text-align: left;
+}
+
+.vinyetaProyectos img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.vinyetaProyectos div {
+    width: 45%;
+}
+
+#gridHab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#gridHab img {
+    width: 30%;
+}
+
+#gridHab div {
+    transition: 100ms;
+    background-color: rgb(27, 27, 27);
+    border-radius: 20px;
+    margin: 5px;
+    border: white solid 1px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gridHab div:hover {
+    transition: 100ms;
+    scale: 1.1;
 }
