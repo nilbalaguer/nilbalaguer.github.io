@@ -99,16 +99,32 @@ a:hover {
     transition: 100ms;
     background-color: rgb(27, 27, 27);
     border-radius: 20px;
-    margin: 5px;
+    margin: 6px;
     border: white solid 1px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 5%;
+}
+
+#gridHab p {
+    font-weight: 600;
+    margin-top: auto;
+    
 }
 
 #gridHab div:hover {
     transition: 100ms;
     scale: 1.1;
+}
+
+#selectorIdiomas {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    transform-origin: top center;
 }
